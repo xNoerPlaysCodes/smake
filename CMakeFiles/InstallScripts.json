@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/noerlol/C-Projects/Executables/SMake/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

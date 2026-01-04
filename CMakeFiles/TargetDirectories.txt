@@ -1,0 +1,3 @@
+/home/noerlol/C-Projects/Executables/SMake/CMakeFiles/smake.dir
+/home/noerlol/C-Projects/Executables/SMake/CMakeFiles/edit_cache.dir
+/home/noerlol/C-Projects/Executables/SMake/CMakeFiles/rebuild_cache.dir

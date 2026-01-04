@@ -1,0 +1,51 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/noerlol/C-Projects/Executables/SMake",
+	"dir-cur-src" : "/home/noerlol/C-Projects/Executables/SMake",
+	"dir-top-bld" : "/home/noerlol/C-Projects/Executables/SMake",
+	"dir-top-src" : "/home/noerlol/C-Projects/Executables/SMake",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"include",
+		"src/include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/noerlol/C-Projects/Executables/SMake/CMakeFiles/smake.dir",
+	"sources" : 
+	{
+		"CMakeFiles/smake.dir/src/exec.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/noerlol/C-Projects/Executables/SMake/src/exec.cpp"
+		},
+		"CMakeFiles/smake.dir/src/main.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/noerlol/C-Projects/Executables/SMake/src/main.cpp"
+		},
+		"CMakeFiles/smake.dir/src/parser.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/noerlol/C-Projects/Executables/SMake/src/parser.cpp"
+		},
+		"CMakeFiles/smake.dir/src/project_config.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/noerlol/C-Projects/Executables/SMake/src/project_config.cpp"
+		},
+		"CMakeFiles/smake.dir/src/util.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/noerlol/C-Projects/Executables/SMake/src/util.cpp"
+		}
+	}
+}

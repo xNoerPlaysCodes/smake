@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/noerlol/C-Projects/Executables/SMake",
+  "command": "/usr/bin/clang++ -I/home/noerlol/C-Projects/Executables/SMake/include -I/home/noerlol/C-Projects/Executables/SMake/src/include -std=gnu++23 @CMakeFiles/smake.dir/src/main.cpp.o.modmap -o CMakeFiles/smake.dir/src/main.cpp.o -c /home/noerlol/C-Projects/Executables/SMake/src/main.cpp",
+  "file": "/home/noerlol/C-Projects/Executables/SMake/src/main.cpp",
+  "output": "/home/noerlol/C-Projects/Executables/SMake/CMakeFiles/smake.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/noerlol/C-Projects/Executables/SMake",
+  "command": "/usr/bin/clang++ -I/home/noerlol/C-Projects/Executables/SMake/include -I/home/noerlol/C-Projects/Executables/SMake/src/include -std=gnu++23 @CMakeFiles/smake.dir/src/exec.cpp.o.modmap -o CMakeFiles/smake.dir/src/exec.cpp.o -c /home/noerlol/C-Projects/Executables/SMake/src/exec.cpp",
+  "file": "/home/noerlol/C-Projects/Executables/SMake/src/exec.cpp",
+  "output": "/home/noerlol/C-Projects/Executables/SMake/CMakeFiles/smake.dir/src/exec.cpp.o"
+},
+{
+  "directory": "/home/noerlol/C-Projects/Executables/SMake",
+  "command": "/usr/bin/clang++ -I/home/noerlol/C-Projects/Executables/SMake/include -I/home/noerlol/C-Projects/Executables/SMake/src/include -std=gnu++23 @CMakeFiles/smake.dir/src/parser.cpp.o.modmap -o CMakeFiles/smake.dir/src/parser.cpp.o -c /home/noerlol/C-Projects/Executables/SMake/src/parser.cpp",
+  "file": "/home/noerlol/C-Projects/Executables/SMake/src/parser.cpp",
+  "output": "/home/noerlol/C-Projects/Executables/SMake/CMakeFiles/smake.dir/src/parser.cpp.o"
+},
+{
+  "directory": "/home/noerlol/C-Projects/Executables/SMake",
+  "command": "/usr/bin/clang++ -I/home/noerlol/C-Projects/Executables/SMake/include -I/home/noerlol/C-Projects/Executables/SMake/src/include -std=gnu++23 @CMakeFiles/smake.dir/src/project_config.cpp.o.modmap -o CMakeFiles/smake.dir/src/project_config.cpp.o -c /home/noerlol/C-Projects/Executables/SMake/src/project_config.cpp",
+  "file": "/home/noerlol/C-Projects/Executables/SMake/src/project_config.cpp",
+  "output": "/home/noerlol/C-Projects/Executables/SMake/CMakeFiles/smake.dir/src/project_config.cpp.o"
+},
+{
+  "directory": "/home/noerlol/C-Projects/Executables/SMake",
+  "command": "/usr/bin/clang++ -I/home/noerlol/C-Projects/Executables/SMake/include -I/home/noerlol/C-Projects/Executables/SMake/src/include -std=gnu++23 @CMakeFiles/smake.dir/src/util.cpp.o.modmap -o CMakeFiles/smake.dir/src/util.cpp.o -c /home/noerlol/C-Projects/Executables/SMake/src/util.cpp",
+  "file": "/home/noerlol/C-Projects/Executables/SMake/src/util.cpp",
+  "output": "/home/noerlol/C-Projects/Executables/SMake/CMakeFiles/smake.dir/src/util.cpp.o"
+}
+]

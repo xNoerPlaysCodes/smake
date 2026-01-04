@@ -1,0 +1,25 @@
+# project_config will be yaml
+
+# command_runner_syntax:
+
+var MESSAGE "Hello World"
+var ANTRMSG "Hello, World (2)"
+var SCRIPTOUT "{exec ./myscript.sh}"
+var VAR_VAR "Message is {MESSAGE}"
+
+task.s first
+
+exec ls -l
+exec echo {SCRIPTOUT}
+
+task.e
+
+task.s second
+exec echo {MESSAGE}
+
+task.e
+
+task.s third -d first -d second
+exec echo Hello world {ANTRMSG}
+
+task.e

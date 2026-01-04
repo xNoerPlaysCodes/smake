@@ -1,0 +1,11 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/smake.dir/src/main.cpp.o: dyndep
+
+build CMakeFiles/smake.dir/src/exec.cpp.o: dyndep
+
+build CMakeFiles/smake.dir/src/parser.cpp.o: dyndep
+
+build CMakeFiles/smake.dir/src/project_config.cpp.o: dyndep
+
+build CMakeFiles/smake.dir/src/util.cpp.o: dyndep
+
