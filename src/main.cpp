@@ -195,6 +195,10 @@ void set_cli_arguments(int argc, char *argv[]) {
             }
         } else if (arg == "build" || arg == "b") {
             args.build = true;
+        } else if (arg == "no-rebuild") {
+            args.norebuild = true;
+        } else if (arg == "gen-clangd") {
+            args.genclangd = true;
         }
 
         else if (arg == "help") {
@@ -213,6 +217,9 @@ void set_cli_arguments(int argc, char *argv[]) {
                 "",
                 "   no-rebuild",
                 "   -> skips rebuilding build.smake (advanced)",
+                "",
+                "   gen-clangd",
+                "   -> generates .clangd files for includes (advanced)",
                 "",
                 "Values to arguments marked with * are mandatory",
             };

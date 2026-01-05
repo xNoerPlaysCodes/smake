@@ -5,7 +5,7 @@
 #include <smake/macros.hpp>
 
 namespace smake {
-    std::vector<std::string> strutil_split(std::string str, char delim) {
+    static std::vector<std::string> strutil_split(std::string str, char delim) {
         std::vector<std::string> out;
         std::string current;
 
@@ -69,7 +69,7 @@ namespace smake {
     parser_context_t *parser_exec(std::vector<std::string> lines) {
         parser_context_t *ctx = new parser_context_t;
 
-        ctx->register_variable({ "PROJECT_DIRECTORY", std::filesystem::absolute(std::filesystem::current_path() / "test").string() });
+        ctx->register_variable({ "PROJECT_DIRECTORY", std::filesystem::absolute(std::filesystem::current_path()).string() });
         ctx->register_variable({ "SMAKE_VERSION", SMAKE__VERSION });
 
         int ln = 1;
