@@ -2,7 +2,7 @@ var CXXC "/usr/bin/clang++"
 var CXX_FLAGS "-std=c++23"
 var BINOUT "{PROJECT_DIRECTORY}/bin"
 var OBJOUT "{PROJECT_DIRECTORY}/.obj"
-var LD "/usr/bin/ld"
+var LD "{CXXC}"
 
 var SRC_FILE_0 "{PROJECT_DIRECTORY}/src/main.cpp"
 var SRC_FILE_1 "{PROJECT_DIRECTORY}/src/util.cpp"
@@ -21,6 +21,6 @@ exec {CXXC} {CXX_FLAGS} -I{PROJECT_DIRECTORY}/include -I{PROJECT_DIRECTORY}/src/
 task.e
 
 task.s linker_phase -d comp_src_file_0 -d comp_src_file_1
-exec {LD} -o {BINOUT}/Smayke /usr/lib/crt1.o /usr/lib/crti.o {OBJOUT}/src_main.cpp.o {OBJOUT}/src_util.cpp.o -lc -lstdc++ -lfreetype /usr/lib/crtn.o -dynamic-linker /lib64/ld-linux-x86-64.so.2
+exec {LD} {CXX_FLAGS} {OBJOUT}/src_main.cpp.o {OBJOUT}/src_util.cpp.o -o {BINOUT}/Smayke -lfreetype
 task.e
 

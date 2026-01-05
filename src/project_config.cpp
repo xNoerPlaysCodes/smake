@@ -105,7 +105,7 @@ namespace smake {
         lines.push_back("var CXX_FLAGS " "\"-std=c++23\"");
         lines.push_back("var BINOUT " "\"{PROJECT_DIRECTORY}/bin\"");
         lines.push_back("var OBJOUT " "\"{PROJECT_DIRECTORY}/.obj\"");
-        lines.push_back("var LD \"/usr/bin/ld\"");
+        lines.push_back("var LD \"{CXXC}\"");
 
         std::vector<std::string> object_files;
 
@@ -156,7 +156,8 @@ namespace smake {
                 deps.push_back("-l" + d);
             }
             lines.push_back("task.s linker_phase " + vecutil_join(src_files_comps, " "));
-            lines.push_back("exec {LD} -o {BINOUT}/" + f["project"]["name"].as<std::string>() + " /usr/lib/crt1.o /usr/lib/crti.o " + vecutil_join(object_files, " ") + " -lc -lstdc++ " + vecutil_join(deps, " ") + " /usr/lib/crtn.o -dynamic-linker /lib64/ld-linux-x86-64.so.2");
+            lines.push_back("exec {LD} {CXX_FLAGS} " + vecutil_join(object_files, " ") + " -o {BINOUT}/" + f["project"]["name"].as<std::string>() + " " + vecutil_join(deps, " "));
+            // lines.push_back("exec {LD} -o {BINOUT}/" + f["project"]["name"].as<std::string>() + " /usr/lib/crt1.o /usr/lib/crti.o " + vecutil_join(object_files, " ") + " -lc -lstdc++ " + vecutil_join(deps, " ") + " /usr/lib/crtn.o -dynamic-linker /lib64/ld-linux-x86-64.so.2");
             lines.push_back("task.e");
 
             LINE_BREAK;
@@ -176,6 +177,7 @@ namespace smake {
                 "    Add: [" + ctx->replace_str_with_vars(vecutil_join(include_dirs, ", ")) + ",",
                 "          " + vecutil_join(cxx_flags, ", ") + "]",
             };
+
             for (auto &line : lines) {
                 file << line << '\n';
             }

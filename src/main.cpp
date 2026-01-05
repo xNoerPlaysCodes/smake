@@ -10,23 +10,6 @@
 #include <util.hpp>
 
 void set_cli_arguments(int argc, char *argv[]);
-static std::string vecutil_join(
-    const std::vector<std::string>& vec,
-    std::string_view delim,
-    size_t start = 0
-) {
-    if (start >= vec.size())
-        return {};
-
-    std::string s;
-    for (size_t i = start; i < vec.size(); ++i) {
-        if (!s.empty())
-            s += delim;
-        s += vec[i];
-    }
-    return s;
-}
-
 
 int main(int argc, char **argv) {
     set_cli_arguments(argc, argv);
@@ -102,7 +85,7 @@ parser: {
 
                     int ret = smake::run_command(argv0, cmd);
                     if (ret != 0) {
-                        std::cout << "FAILED: " << argv0 << ' ' << vecutil_join(cmd, " ") << '\n';
+                        std::cout << "FAILED: " << argv0 << ' ' << smake::vecutil_join(cmd, " ") << '\n';
                         all_cmds_successful = false;
                     }
                 }
