@@ -151,7 +151,7 @@ namespace smake {
                 deps.push_back("-l" + d);
             }
             lines.push_back("task.s linker_phase " + vecutil_join(src_files_comps, " "));
-            lines.push_back("exec {LD} -o {BINOUT}/output /usr/lib/crt1.o /usr/lib/crti.o " + vecutil_join(object_files, " ") + " -lc -lstdc++ " + vecutil_join(deps, " ") + " /usr/lib/crtn.o -dynamic-linker /lib64/ld-linux-x86-64.so.2");
+            lines.push_back("exec {LD} -o {BINOUT}/" + f["project"]["name"].as<std::string>() + " /usr/lib/crt1.o /usr/lib/crti.o " + vecutil_join(object_files, " ") + " -lc -lstdc++ " + vecutil_join(deps, " ") + " /usr/lib/crtn.o -dynamic-linker /lib64/ld-linux-x86-64.so.2");
             lines.push_back("task.e");
 
             LINE_BREAK;

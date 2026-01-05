@@ -52,3 +52,15 @@
 47	53	1767542658902917311	CMakeFiles/smake.dir/src/util.cpp.o.modmap	ba5cfd9c27f94ddf
 53	1275	1767542658909062714	CMakeFiles/smake.dir/src/main.cpp.o	6f78f5b6bfb06c5d
 1275	1333	1767542660130941325	bin/smake	eba3d55fc6b73955
+7	55	1767606867591579776	CMakeFiles/smake.dir/src/project_config.cpp.o.ddi	b5835c99db7e14a2
+7	56	1767606867590754361	CMakeFiles/smake.dir/src/main.cpp.o.ddi	d7357368d3df6bcc
+56	77	1767606867639755444	CMakeFiles/smake.dir/CXX.dd	ba5cfd9c27f94ddf
+56	77	1767606867639755444	CMakeFiles/smake.dir/CXXModules.json	ba5cfd9c27f94ddf
+56	77	1767606867639755444	CMakeFiles/smake.dir/src/main.cpp.o.modmap	ba5cfd9c27f94ddf
+56	77	1767606867639755444	CMakeFiles/smake.dir/src/exec.cpp.o.modmap	ba5cfd9c27f94ddf
+56	77	1767606867639755444	CMakeFiles/smake.dir/src/parser.cpp.o.modmap	ba5cfd9c27f94ddf
+56	77	1767606867639755444	CMakeFiles/smake.dir/src/project_config.cpp.o.modmap	ba5cfd9c27f94ddf
+56	77	1767606867639755444	CMakeFiles/smake.dir/src/util.cpp.o.modmap	ba5cfd9c27f94ddf
+77	1274	1767606867661755931	CMakeFiles/smake.dir/src/main.cpp.o	6f78f5b6bfb06c5d
+78	1421	1767606867662028532	CMakeFiles/smake.dir/src/project_config.cpp.o	66372ef3e428b364
+1421	1478	1767606869004785612	bin/smake	eba3d55fc6b73955
